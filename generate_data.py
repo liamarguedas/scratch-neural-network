@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 
 def generate_data(observations = 1_000, return_targets = False):
     
