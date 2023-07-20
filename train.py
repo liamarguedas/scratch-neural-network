@@ -12,7 +12,7 @@ def train(X, y, weights, biases, observations, learning_rate = 0.02, epochs = 10
         
         if verbose:
             
-            print(f"Epoch: {epoch}/{epochs}: loss {loss}")
+            print(f"Epoch: {epoch + 1}/{epochs}: loss {loss}")
             
         deltas_scaled = deltas / observations
         
