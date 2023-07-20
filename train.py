@@ -1,6 +1,6 @@
 import numpy as np
 
-def train(X, y, weights, biases, observations, learning_rate = 0.02, epochs = 100, verbose = True, return_weights_biases = True):
+def train(X, y, weights, biases, observations, learning_rate = 0.02, epochs = 100, verbose = True, return_outputs = True):
     
     for epoch in range(epochs):
         
@@ -22,4 +22,4 @@ def train(X, y, weights, biases, observations, learning_rate = 0.02, epochs = 10
     
     if return_weights_biases:    
     
-        return weights, biases
+        return (weights, biases), outputs
