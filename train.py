@@ -20,6 +20,6 @@ def train(X, y, weights, biases, observations, learning_rate = 0.02, epochs = 10
         
         biases = biases - learning_rate * np.sum(deltas_scaled)
     
-    if return_weights_biases:    
+    if return_outputs:    
     
         return (weights, biases), outputs
